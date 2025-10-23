@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hussain Ashfaque — Cloud Engineer Resume</title>
+  <meta name="description" content="AWS-focused Cloud/IT Engineer resume and portfolio for Hussain Ashfaque." />
+  <meta property="og:title" content="Hussain Ashfaque — Cloud Engineer" />
+  <meta property="og:description" content="AWS Certified Solutions Architect – Associate. Systems analysis, automation, and cloud infrastructure." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>☁️</text></svg>">
+  <!-- Tailwind via CDN for a single‑file static site. For production, you can precompile. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config tweaks
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['ui-sans-serif','system-ui','Segoe UI','Roboto','Inter','sans-serif'] },
+        }
+      },
+      darkMode: 'class'
+    };
+  </script>
+  <style>
+    /* Print-friendly layout */
+    @media print {
+      .no-print { display:none !important; }
+      .print-gap { gap: 0.35rem; }
+      body { color: #000; }
+      a[href^="http"]::after { content: " (" attr(href) ")"; font-weight: normal; }
+      .shadow, .shadow-lg, .shadow-md { box-shadow: none !important; }
+      .prose li { margin: 0 0 0.15rem 0; }
+    }
+  </style>
+  <script>
+    // Lightweight dark mode toggle with persistence
+    (function(){
+      const key = 'theme';
+      const root = document.documentElement;
+      const saved = localStorage.getItem(key);
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        root.classList.add('dark');
+      }
+      window.toggleTheme = () => {
+        const isDark = root.classList.toggle('dark');
+        localStorage.setItem(key, isDark ? 'dark' : 'light');
+      };
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hussain Ashfaque",
+    "jobTitle": "Cloud Engineer",
+    "email": "mailto:nain.ashee@gmail.com",
+    "telephone": "+16692327115",
+    "alumniOf": [
+      {"@type":"CollegeOrUniversity","name":"San Francisco State University"},
+      {"@type":"CollegeOrUniversity","name":"Mission College"}
+    ],
+    "knowsAbout": ["AWS","EC2","S3","VPC","IAM","Route 53","Jamf","BigFix","MDM","Active Directory","Python","PowerShell","Shell","SQL"],
+    "url": "",
+    "sameAs": [
+      "#",  
+      "#"   
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <!-- Header / Hero -->
+  <header class="sticky top-0 z-20 backdrop-blur bg-white/70 dark:bg-slate-950/60 border-b border-slate-200/70 dark:border-slate-800/60">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between py-3">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 grid place-items-center rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900">☁️</div>
+          <div>
+            <h1 class="font-display text-lg sm:text-xl font-semibold tracking-tight">Hussain Ashfaque</h1>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">AWS Solutions Architect – Associate | Cloud & IT Systems</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 no-print">
+          <a href="#contact" class="px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 text-sm">Contact</a>
+          <button onclick="toggleTheme()" class="px-3 py-2 rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 text-sm">Toggle theme</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6">
+    <!-- Top card -->
+    <section class="mt-8 grid gap-6 sm:grid-cols-2 print-gap">
+      <div class="rounded-2xl p-6 sm:p-8 shadow-lg bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-950 border border-slate-200/70 dark:border-slate-800">
+        <h2 class="text-2xl font-semibold mb-3">Cloud Engineer</h2>
+        <p class="leading-relaxed text-slate-700 dark:text-slate-300">AWS Certified Solutions Architect – Associate with 3+ years in IT systems analysis & support. I optimize operations, automate workflows, and build secure, scalable AWS environments.</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 rounded-full text-xs border">AWS</span>
+          <span class="px-2.5 py-1 rounded-full text-xs border">Automation</span>
+          <span class="px-2.5 py-1 rounded-full text-xs border">Jamf</span>
+          <span class="px-2.5 py-1 rounded-full text-xs border">BigFix</span>
+          <span class="px-2.5 py-1 rounded-full text-xs border">Python</span>
+          <span class="px-2.5 py-1 rounded-full text-xs border">PowerShell</span>
+        </div>
+        <div class="mt-6 no-print flex flex-wrap gap-3">
+          <!-- TODO: Put your final PDF in the same folder and rename href to that file name -->
+          <a href="Hussain-Ashfaque-Resume.pdf" class="px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 text-sm">Download PDF</a>
+          <!-- TODO: Replace # with your real profile URLs -->
+          <a href="#" class="px-4 py-2 rounded-xl border text-sm" aria-label="LinkedIn profile">LinkedIn</a>
+          <a href="#" class="px-4 py-2 rounded-xl border text-sm" aria-label="GitHub profile">GitHub</a>
+        </div>
+      </div>
+      <aside id="contact" class="rounded-2xl p-6 sm:p-8 shadow-lg bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-800">
+        <h3 class="text-xl font-semibold mb-4">Contact</h3>
+        <ul class="space-y-2 text-sm">
+          <li><strong>Phone:</strong> <a class="underline" href="tel:+16692327115">(669) 232‑7115</a></li>
+          <li><strong>Email:</strong> <a class="underline" href="mailto:nain.ashee@gmail.com">nain.ashee@gmail.com</a></li>
+          <li><strong>Location:</strong> Oakland, CA</li>
+          <li class="text-slate-500 dark:text-slate-400">Open to Cloud Engineer roles</li>
+        </ul>
+        <div class="mt-4 text-xs text-slate-500 dark:text-slate-400">Last updated: <span id="lastUpdated"></span></div>
+        <script>document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();</script>
+      </aside>
+    </section>
+
+    <!-- Skills -->
+    <section class="mt-10">
+      <h3 class="text-xl font-semibold mb-3">Technical Skills</h3>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="rounded-2xl p-6 border shadow-sm bg-white dark:bg-slate-900 border-slate-200/70 dark:border-slate-800">
+          <h4 class="font-medium mb-2">Cloud & Platforms</h4>
+          <p class="text-sm">AWS (EC2, S3, VPC, IAM, Route 53), ServiceNow, Salesforce, Jamf, BigFix, CMDB, MDM, Active Directory</p>
+        </div>
+        <div class="rounded-2xl p-6 border shadow-sm bg-white dark:bg-slate-900 border-slate-200/70 dark:border-slate-800">
+          <h4 class="font-medium mb-2">Operating Systems</h4>
+          <p class="text-sm">Windows Server, macOS, Windows 10/11, Linux (basic/terminal)</p>
+        </div>
+        <div class="rounded-2xl p-6 border shadow-sm bg-white dark:bg-slate-900 border-slate-200/70 dark:border-slate-800">
+          <h4 class="font-medium mb-2">Scripting & Automation</h4>
+          <p class="text-sm">Python (basic), PowerShell, Shell, SQL (basic queries)</p>
+        </div>
+        <div class="rounded-2xl p-6 border shadow-sm bg-white dark:bg-slate-900 border-slate-200/70 dark:border-slate-800">
+          <h4 class="font-medium mb-2">Core Competencies</h4>
+          <p class="text-sm">Cloud Architecture, Systems Administration, Network Troubleshooting, Security Compliance, Configuration Management, IT Automation, Technical Documentation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="mt-10">
+      <h3 class="text-xl font-semibold mb-4">Professional Experience</h3>
+      <ol class="relative border-s border-slate-200 dark:border-slate-800 ps-5 space-y-8">
+        <li>
+          <div class="absolute -start-2 top-1.5 size-3 rounded-full bg-slate-400"></div>
+          <div class="flex flex-wrap items-baseline gap-x-2">
+            <h4 class="font-semibold">IT Systems Analyst</h4>
+            <span class="text-sm text-slate-500">University of California Office of the President (UCOP) · Oakland, CA</span>
+            <span class="ms-auto text-sm">Oct 2022 – Present</span>
+          </div>
+          <ul class="mt-2 list-disc ms-5 text-sm leading-6">
+            <li>Resolved 50+ L1/L2 tickets weekly with ~95% SLA compliance across Windows & macOS.</li>
+            <li>Automated printer deployment via Jamf Pro for 300+ Macs, cutting setup time by ~80%.</li>
+            <li>Led automation and endpoint management improvements, reducing manual workloads.</li>
+            <li>Hardened endpoints with Jamf & BigFix patching, lowering vulnerabilities by ~40%.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="absolute -start-2 top-1.5 size-3 rounded-full bg-slate-400"></div>
+          <div class="flex flex-wrap items-baseline gap-x-2">
+            <h4 class="font-semibold">IT Support Engineer (Contract)</h4>
+            <span class="text-sm text-slate-500">vArmour · Los Altos, CA</span>
+            <span class="ms-auto text-sm">May 2021 – Jul 2022</span>
+          </div>
+          <ul class="mt-2 list-disc ms-5 text-sm leading-6">
+            <li>Troubleshot complex network & system issues for 400+ users; improved uptime by ~25%.</li>
+            <li>Authored SOPs for DC & Engineering teams; reduced onboarding time by ~40%.</li>
+            <li>Administered MDM (Jamf, Intune) with 100% policy compliance for encryption & patching.</li>
+            <li>Piloted automation & monitoring tools; boosted operational efficiency by ~15%.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="absolute -start-2 top-1.5 size-3 rounded-full bg-slate-400"></div>
+          <div class="flex flex-wrap items-baseline gap-x-2">
+            <h4 class="font-semibold">IT System Intern (Contract)</h4>
+            <span class="text-sm text-slate-500">RingCentral · Belmont, CA</span>
+            <span class="ms-auto text-sm">May 2020 – Aug 2020</span>
+          </div>
+          <ul class="mt-2 list-disc ms-5 text-sm leading-6">
+            <li>Supported mixed Mac/Windows environment for 400+ users; provisioning & network devices.</li>
+            <li>Automated helpdesk workflows via Salesforce; reduced ticket resolution time by ~35%.</li>
+            <li>Trained 50+ new hires on G‑Suite, Zoom, and O365 to accelerate onboarding.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Projects -->
+    <section class="mt-10">
+      <h3 class="text-xl font-semibold mb-4">Cloud Projects</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="rounded-2xl p-6 border shadow-sm bg-white dark:bg-slate-900 border-slate-200/70 dark:border-slate-800">
+          <h4 class="font-medium">AWS Networking & Cloud Infrastructure Series</h4>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">2024 – 2025 · NextWork.org / Personal Lab</p>
+          <ul class="mt-2 list-disc ms-5 text-sm leading-6">
+            <li>Multi-VPC architecture with public/private subnets, custom route tables, and layered security.</li>
+            <li>VPC Peering, Gateway/Interface Endpoints, and VPC Flow Logs for secure, monitored traffic.</li>
+            <li>Secure S3 via IAM roles & Gateway Endpoints + CloudWatch monitoring (least privilege).</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl p-6 border shadow-sm bg-white dark:bg-slate-900 border-slate-200/70 dark:border-slate-800">
+          <h4 class="font-medium">AWS Infrastructure Automation</h4>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Personal Project</p>
+          <ul class="mt-2 list-disc ms-5 text-sm leading-6">
+            <li>Provisioned multi-tier stack (EC2, S3, IAM, VPC) with segmentation & security best practices.</li>
+            <li>Automated EC2 provisioning via Python/Boto3; ~70% faster deployments.</li>
+            <li>Implemented IAM roles/policies for strict access control.</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl p-6 border shadow-sm bg-white dark:bg-slate-900 border-slate-200/70 dark:border-slate-800 md:col-span-2">
+          <h4 class="font-medium">RAG Chatbot for UCOP IT Team (Local & AWS)</h4>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">FAISS + Ollama Mistral on EC2</p>
+          <ul class="mt-2 list-disc ms-5 text-sm leading-6">
+            <li>Secured VPC, SGs, and IAM roles; integrated with UCOP AWS footprint.</li>
+            <li>t3.medium EC2 + S3 persistence for balanced performance & cost.</li>
+            <li>Reduced manual resolution time by ~30% via automated FAQ and ticket triage.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Certifications & Education -->
+    <section class="mt-10 grid md:grid-cols-2 gap-6">
+      <div class="rounded-2xl p-6 border shadow-sm bg-white dark:bg-slate-900 border-slate-200/70 dark:border-slate-800">
+        <h3 class="text-xl font-semibold mb-3">Licenses & Certifications</h3>
+        <ul class="text-sm space-y-2">
+          <li>AWS Certified Solutions Architect – Associate (SAA‑C03), 2025</li>
+          <li>AWS Certified Cloud Practitioner (CLF‑C01), 2025</li>
+          <li>Salesforce Certified Administrator (SCA), 2024</li>
+          <li>Google Data Analytics Certificate, 2023</li>
+        </ul>
+      </div>
+      <div class="rounded-2xl p-6 border shadow-sm bg-white dark:bg-slate-900 border-slate-200/70 dark:border-slate-800">
+        <h3 class="text-xl font-semibold mb-3">Education</h3>
+        <ul class="text-sm space-y-2">
+          <li><strong>San Francisco State University</strong> — B.S. Computer Science (2018–2021)</li>
+          <li><strong>Mission College</strong> — A.S. Computer Science (2016–2018)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-12 py-8 text-center text-xs text-slate-500">
+      <p>© <span id="year"></span> Hussain Ashfaque. All rights reserved.</p>
+      <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+      <p class="mt-2">Built as a clean, single‑file static site. Print for a one‑page PDF.</p>
+    </footer>
+  </main>
+</body>
+</html>
